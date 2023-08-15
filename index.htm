@@ -9,12 +9,29 @@
         function traslacion()
         {
             // leer datos del vf
-            var  origin = document.getElementById("vo").value;
-            origin = origin.split(",");
-            originn = [];
-            origin.forEach((element) =>
-             {originn.push(Number(element))});
-            alert (originn[+0]+ originn[2]);
+            origin = strarr2num(byId("vo")),",";
+            otras = strarr2num(byId("vt")),",";
+            ofin = sum(origin,otras);
+            alert(aon[0]+aon[1]+aon[2]);
+        }
+        function byId(sid)
+        {
+            return document.getElementById(sid).value
+        }
+        function strarr2num(strarr, lim)
+        {
+            arr = arr.split(lim)
+            ann = []
+            ann = forEach((element)=>
+            {ann.push(Number(element))});
+        }
+        return ann;
+        function sum(array1, array2)
+        {
+            return array1.map(function (num, idx)
+            {
+                return num + array2[idx];
+            });
         }
     </script>
 </head>
