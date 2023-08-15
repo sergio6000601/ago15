@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function traslacion()
+        {
+            // leer datos del vf
+            var  origin = document.getElementById("vo").value;
+            origin = origin.split(",");
+            originn = [];
+            origin.forEach((element) =>
+             {originn.push(Number(element))});
+            alert (originn[+0]+ originn[2]);
+        }
+    </script>
+</head>
+<body>
+    <p>
+        Vector original
+        <input id="vo"/>
+    </p>
+    <p>
+        Vector traslacion
+        <input id="vt"/>
+    </p>
+    <p>
+        Vector trasladado
+        <input id="vf"/>
+    </p>
+    <button size = 12 id= "bttn" onclick= "traslacion()"> realizar traslacion </button>
+</body>
+</html>
